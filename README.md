@@ -1,8 +1,14 @@
-# Build an Interactive CLI Tool with Node.js
+# now-config
 
-## now-config
+A simple CLI to help generate a [now.sh](https://now.sh/) configuration file.
 
-A CLI to help generate a now.sh configuration file.
+Based on the examples [here](https://github.com/CodingGarden/deploy-with-now-v2).
+
+### Installation
+
+```sh
+npm install -g now-config
+```
 
 ### Usage
 
@@ -10,22 +16,8 @@ A CLI to help generate a now.sh configuration file.
 now-config
 ```
 
-## TODO
+## Example
 
-* [x] Choose a library to use for user interaction
-* [ ] CLI will ask questions:
-  * [x] Check if now.json already exists...
-    * Ask if they want to override
-  * [x] What is the name of the project?
-    * [x] default to current directory name
-  * [x] What type of project?
-    * node-express
-    * static
-    * react
-    * vue
-    * static-build
-  * [x] Project specific questions...
-  * [x] Would you like to add now-build to your package.json?
-    * Only prompt if react / vue or static-build
-  * [x] Would you like to specify an alias?
-  * [ ] Would you like to deploy?
+![static-example](https://i.imgur.com/YDYeD5Z.png)
+
+![static-example](https://i.imgur.com/Prw3Zy4.png)
