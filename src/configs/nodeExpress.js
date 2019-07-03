@@ -1,3 +1,4 @@
+const path = require('path');
 const inquirer = require('inquirer');
 
 const baseConfig = {
@@ -16,7 +17,7 @@ async function nodeExpress(config) {
   let mainFile = 'src/index.js';
   try {
     // eslint-disable-next-line
-    const packageJSON = require(process.cwd() + '/package.json');
+    const packageJSON = require(path.join(process.cwd(), 'package.json'));
     mainFile = packageJSON.main;
     // eslint-disable-next-line
   } catch (error) { }
@@ -25,11 +26,12 @@ async function nodeExpress(config) {
       {
         type: 'text',
         name: 'main',
-        message: 'What is the path to your express entry point?',
+        message: 'What is the path to your express entry point? 🌈',
         default: mainFile,
       },
     ]);
-  console.log(answers);
+  baseConfig.builds[0].src = answers.main;
+  baseConfig.routes[0].dest = answers.main;
   return {
     ...config,
     ...baseConfig,

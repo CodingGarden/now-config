@@ -24,10 +24,8 @@ now-config
     * react
     * vue
     * static-build
-    * lambda
-  * [ ] Project specific questions...
-  * [ ] Would you like to specify an alias?
-    * Allow one or more
-  * [ ] Would you like to add now-build to your package.json?
+  * [x] Project specific questions...
+  * [x] Would you like to add now-build to your package.json?
     * Only prompt if react / vue or static-build
+  * [x] Would you like to specify an alias?
   * [ ] Would you like to deploy?
