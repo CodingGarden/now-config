@@ -14,18 +14,18 @@ now-config
 
 * [x] Choose a library to use for user interaction
 * [ ] CLI will ask questions:
-  * [ ] Check if now.json already exists...
+  * [x] Check if now.json already exists...
     * Ask if they want to override
-  * [ ] What is the name of the project?
-    * default to current directory name
-  * [ ] What type of project?
+  * [x] What is the name of the project?
+    * [x] default to current directory name
+  * [x] What type of project?
     * node-express
     * static
     * react
     * vue
     * static-build
     * lambda
-  * [ ] Which file is the entry point?
+  * [ ] Project specific questions...
   * [ ] Would you like to specify an alias?
     * Allow one or more
   * [ ] Would you like to add now-build to your package.json?

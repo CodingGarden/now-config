@@ -3,7 +3,18 @@
   "version": "1.0.0",
   "description": "A CLI to help generate a now.sh configuration file.",
   "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint src/"
+  },
   "keywords": [],
   "author": "CJ R. <cj@null.computer> (https://w3cj.now.sh)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^6.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.0"
+  }
 }
