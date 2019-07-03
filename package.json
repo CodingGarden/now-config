@@ -1,0 +1,9 @@
+{
+  "name": "now-config",
+  "version": "1.0.0",
+  "description": "A CLI to help generate a now.sh configuration file.",
+  "main": "src/index.js",
+  "keywords": [],
+  "author": "CJ R. <cj@null.computer> (https://w3cj.now.sh)",
+  "license": "MIT"
+}
