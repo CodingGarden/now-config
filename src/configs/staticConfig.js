@@ -17,7 +17,7 @@ async function staticConfig(config) {
         default: '.',
       },
     ]);
-  baseConfig.builds[0].src = path.join(answers.directory, '*');
+  baseConfig.builds[0].src = path.join(answers.directory, '*').replace(/\\/g, '/');
   return {
     ...config,
     ...baseConfig,
